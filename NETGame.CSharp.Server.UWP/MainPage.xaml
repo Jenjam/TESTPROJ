@@ -1,0 +1,119 @@
+﻿<Page
+    x:Class="NETGame.CSharp.Server.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NETGame.CSharp.Server.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="mainGrid" Background="#FF23272A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="headerGrid">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text=".NET Game Server - Team C" TextWrapping="Wrap" Foreground="White" FontSize="32"/>
+        </Grid>
+        <Grid x:Name="contentGrid" Grid.Row="1" Background="#FF2C2F33">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.55*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="networkConfig">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.67*"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="networkConfigHeader" Background="#FF1F1F1F" FocusVisualPrimaryBrush="#FF1F1F1F">
+                    <Image Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Assets/network-settings.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Network settings" TextWrapping="Wrap" Foreground="White" FontSize="32"/>
+                </Grid>
+                <Grid x:Name="networkConfigContent" Grid.Column="1" Background="#FF343434">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.15*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="@IP:" TextWrapping="Wrap" Foreground="White" VerticalAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="0"/>
+                    <TextBox x:Name="txtIpAddr" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock Text="Port:" TextWrapping="Wrap" Foreground="White" VerticalAlignment="Center" FontSize="30" Grid.Row="1" Grid.Column="0"/>
+                    <TextBox x:Name="txtPort" Text="32101" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="30" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+            </Grid>
+            <Grid x:Name="gameConfig" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.67*"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="gameConfigHeader" Background="#FF1F1F1F">
+                    <Image HorizontalAlignment="Left" Width="60" Source="/Assets/game-settings.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="32"><Run Text="Game"/><Run Text=" settings"/></TextBlock>
+                </Grid>
+                <Grid x:Name="gameConfigContent" Grid.Column="1" Background="#FF343434">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Game title:" TextWrapping="Wrap" Foreground="White" FontSize="20" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="txtGameTitle" Text="Default game title" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" Grid.Column="1"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="White" FontSize="20" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Player N°:" Grid.Row="1"/>
+                    <Slider x:Name="sliderNbPlayer" Minimum="2" Maximum="10" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Text="Money" Foreground="White" FontSize="20" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2"/>
+                    <Slider x:Name="sliderNbMoney" Minimum="2000" Maximum="10000" TickFrequency="500" SnapsTo="Ticks" VerticalAlignment="Center" Grid.Column="3"/>
+                    <TextBlock Text="N°Rounds" TextWrapping="Wrap" Foreground="White" FontSize="20" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1"/>
+                    <Slider x:Name="sliderNbRounds" Minimum="2" Maximum="20" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1"/>
+                </Grid>
+            </Grid>
+            <Grid x:Name="generationConfig" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.67*"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="generationConfigHeader" Background="#FF1F1F1F">
+                    <Image Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Assets/generation-settings.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="32" Text="Generation settings"/>
+                </Grid>
+                <Grid x:Name="generationConfigContent" Grid.Column="1" Background="#FF343434">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontSize="18" FontFamily="Segoe UI" Text="N° of developers/round :"/>
+                    <Slider x:Name="sliderNbDevGenerated" Minimum="2" Maximum="10" VerticalAlignment="Center" Grid.Column="2" />
+                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontSize="18" FontFamily="Segoe UI" Grid.Row="1" Text="N° of projects/round:"/>
+                    <Slider x:Name="sliderProjectGenerated" Minimum="2" Maximum="10" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnConnect" Content="Connect!" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Height="100" Background="#FF99AAB5" Foreground="White" Click="BtnConnect_Click"/>
+                <Grid>
+                    <ListBox x:Name="listBoxLogs" Foreground="White" Background="#FF23272A"/>
+                </Grid>
+                <Button x:Name="btnSendRequest" Content="Send CMD" Grid.Column="1" VerticalAlignment="Stretch" Background="#FF99AAB5" Foreground="White" Margin="6,246,5,10" Click="BtnSendRequest_Click" HorizontalAlignment="Stretch"/>
+                <TextBox x:Name="txtCmd" Grid.Column="1" Margin="6,209,6,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>
