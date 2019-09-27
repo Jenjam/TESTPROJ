@@ -1,0 +1,11 @@
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\bin\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.deps.json
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\bin\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.runtimeconfig.json
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\bin\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.runtimeconfig.dev.json
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\bin\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.dll
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\bin\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.pdb
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.csprojAssemblyReference.cache
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.csproj.CoreCompileInputs.cache
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.AssemblyInfoInputs.cache
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.AssemblyInfo.cs
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.dll
+D:\DIIAGE1\Developpement\.NET1\NETGame.CSharp.Server.Core\obj\Debug\netcoreapp2.1\NETGame.CSharp.Server.Core.pdb

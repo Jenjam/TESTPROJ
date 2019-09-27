@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NETGame.CSharp.Server.ConsoleClientTest": {
+      "commandName": "Project",
+      "commandLineArgs": "127.0.0.1 32101"
+    }
+  }
+}

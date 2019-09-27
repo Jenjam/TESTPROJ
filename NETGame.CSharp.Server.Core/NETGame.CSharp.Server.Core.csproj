@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Configurations>Debug;Release;Debug with args</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NETGame.CSharp.Entities\NETGame.CSharp.Entities.csproj" />
+    <ProjectReference Include="..\NETGame.CSharp.Server.Services\NETGame.CSharp.Server.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "NETGame.CSharp.Server.Core": {
+      "commandName": "Project"
+    }
+  }
+}

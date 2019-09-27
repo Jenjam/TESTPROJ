@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Server.Services\\NETGame.CSharp.Server.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\NETGame.CSharp.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\NETGame.CSharp.Entities.csproj",
+        "projectName": "NETGame.CSharp.Entities",
+        "projectPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\NETGame.CSharp.Entities.csproj",
+        "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Server.Services\\NETGame.CSharp.Server.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Server.Services\\NETGame.CSharp.Server.Services.csproj",
+        "projectName": "NETGame.CSharp.Server.Services",
+        "projectPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Server.Services\\NETGame.CSharp.Server.Services.csproj",
+        "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Server.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\NETGame.CSharp.Entities.csproj": {
+                "projectPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjectDotNet\\NETGame.CSharp.Entities\\NETGame.CSharp.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
