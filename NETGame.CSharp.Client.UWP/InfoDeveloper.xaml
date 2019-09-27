@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="NETGame.CSharp.Client.UWP.InfoDeveloper"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NETGame.CSharp.Client.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource AppBarItemForegroundThemeBrush}" FocusVisualSecondaryBrush="#99060606" BorderBrush="Black">
+
+    <Grid Background="Black" RenderTransformOrigin="0.996,0.819" Opacity="0.7">
+        <Image Source="/Assets/avatar.png" Margin="0,125,1727,748"/>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="199,133,0,0" Foreground="White" Text="Name: " TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="48" FontWeight="Normal" RenderTransformOrigin="0.432,0.842"/>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="204,233,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="48" FontWeight="Normal"><Run Text="Cost"/><Run Text=": "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="13,325,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="48" FontWeight="Normal"><Run Text="Status"/><Run Text=": "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="853,133,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="48" FontWeight="Normal" RenderTransformOrigin="0.432,0.842"><Run Text="School"/><Run Text=": "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="858,233,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontSize="48" FontWeight="Normal" RenderTransformOrigin="0.432,0.842"><Run Text="Speciality"/><Run Text=": "/></TextBlock>
+        <Button Content="Embaucher" Margin="362,888,0,0" VerticalAlignment="Top" Height="82" Width="232" Background="#FF2EFF00" Foreground="Black" FontSize="36" RenderTransformOrigin="0.274,0.482" BorderBrush="#FF0CFF00" FocusVisualSecondaryBrush="#9900FF23" FocusVisualPrimaryBrush="Black" FontWeight="Bold"/>
+        <Button Content="Virer" Margin="1320,888,0,0" VerticalAlignment="Top" Height="82" Width="239" Background="Red" Foreground="Black" FontSize="36" BorderBrush="Red" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="411,399,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="48" FontWeight="Normal"><Run Text="Skill(s)"/><Run Text=" "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="79" Margin="1287,399,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" FontSize="48" FontWeight="Normal"><Run Text="Certification"/><Run Text="("/><Run Text="s"/><Run Text=")"/></TextBlock>
+        <ListView HorizontalAlignment="Left" x:Name="lstSkillDev" Height="406" Margin="10,463,0,0" VerticalAlignment="Top" Width="929" Background="#FF727272" BorderBrush="#FF3C3C3C" FocusVisualSecondaryBrush="#99707070">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <!--<TextBlock Text=" " HorizontalTextAlignment="Start" Width="200" Foreground="White" FontWeight="ExtraBold"></TextBlock>-->
+                        <TextBlock Text="{Binding SkillName}" HorizontalTextAlignment="Start" Width="300" Foreground="White" FontWeight="ExtraBold"></TextBlock>
+                        <TextBlock Text="Level: " HorizontalTextAlignment="Start" Width="100" Foreground="Red" FontWeight="ExtraBold"></TextBlock>
+                        <TextBlock Text="{Binding Niveau}" HorizontalTextAlignment="Start" Width="100" Foreground="Red" FontWeight="ExtraBold"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="lstCertDev" HorizontalAlignment="Left" Height="406" Margin="982,463,0,0" VerticalAlignment="Top" Width="928" Background="#FF6E6E6E" BorderBrush="#FF2B2B2B">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <!--<TextBlock Text=" " HorizontalTextAlignment="Start" Width="200" Foreground="White" FontWeight="ExtraBold"></TextBlock>-->
+                        <TextBlock Text="{Binding CertificationName}" Foreground="White" FontWeight="ExtraBold" HorizontalTextAlignment="Start" Width="200"></TextBlock>
+                        <TextBlock Text="Minimal: " HorizontalTextAlignment="Start" Width="70" Foreground="Orange"></TextBlock>
+                        <TextBlock Text="{Binding CertificationMinLevel}" HorizontalTextAlignment="Start" Width="100" Foreground="Orange" FontWeight="ExtraBold"></TextBlock>
+                        <TextBlock Text="Maximal: " HorizontalTextAlignment="Start" Width="60" Foreground="Red"></TextBlock>
+                        <TextBlock Text="{Binding CertificationMaxLevel}" HorizontalTextAlignment="Start" Width="100" Foreground="Red" FontWeight="ExtraBold"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtNameInfoDev" Margin="358,133,0,0" Text="name" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="390" Height="70" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtCostInfoDev" Margin="327,233,0,0" Text="Cost" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="390" Height="70" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtStatusInfoDev" Margin="169,325,0,0" Text="Status" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="390" Height="70" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtSchoolInfoDev" Margin="1035,133,0,0" Text="School" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="585" Height="70" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtSpeInfoDev" Margin="1088,233,0,0" Text="Speciality" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="558" Height="70" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="117" Margin="1803,10,0,0" VerticalAlignment="Top" Width="117" Source="/Assets/close.png" Stretch="Uniform" Tapped="imgCloseTapped"/>
+    </Grid>
+
+</Page>
